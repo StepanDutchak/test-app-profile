@@ -6,6 +6,6 @@
     - font is Outfit from Google [link](https://fonts.google.com/specimen/Outfit)
     - use the default or any other images/icons of your choice for graphic elements
     - feel free to use react native ui libs if you find it useful
-- create MR to the main branch, once ready
+- send me an email with a link to your code
 
 Good luck!
