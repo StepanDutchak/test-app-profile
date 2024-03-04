@@ -5,6 +5,7 @@
     - font is Outfit from Google [link](https://fonts.google.com/specimen/Outfit)
     - use the default or any other images/icons of your choice for graphic elements
     - feel free to use react native ui libs if you find it useful
+    - note: pixel perfect is not expected for this task, your best effort will be good
 - send me an email with a link to your code
 
 Good luck!
