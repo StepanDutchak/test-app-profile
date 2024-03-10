@@ -1,36 +1,18 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-} from 'react-native';
 
-import {
-  Colors
-} from 'react-native/Libraries/NewAppScreen';
+import {Navigation} from './src/navigators';
+import {store} from './src/store';
+import {Provider} from 'react-redux';
+import {AppStateProvider} from 'context/AppState/AppStateProvider';
 
-
-function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
+const App = (): JSX.Element => {
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <Text>Good luck!</Text>
-    </SafeAreaView>
+    <Provider store={store}>
+      <AppStateProvider>
+        <Navigation />
+      </AppStateProvider>
+    </Provider>
   );
-}
-
-const styles = StyleSheet.create({
-});
+};
 
 export default App;
